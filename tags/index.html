@@ -28,7 +28,7 @@
 <meta property="og:description" content="不吃豆芽!">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-27T16:52:07.000Z">
-<meta property="article:modified_time" content="2022-03-27T16:53:01.814Z">
+<meta property="article:modified_time" content="2022-03-29T03:12:50.424Z">
 <meta property="article:author" content="Shell">
 <meta name="twitter:card" content="summary">
 
@@ -228,6 +228,34 @@
               <a href="/tags/LeedCode-1-50/" style="font-size: 12px; color: #ccc">LeedCode 1 ~ 50</a> <a href="/tags/Leetcode-Acwing-%E5%91%A8%E8%B5%9B/" style="font-size: 12px; color: #ccc">Leetcode & Acwing 周赛</a> <a href="/tags/%E5%89%91%E6%8C%87-offer/" style="font-size: 12px; color: #ccc">剑指 offer</a>
             </div>
           </div>
+	  ﻿<script type="text/javascript">
+     var alltags = document.getElementsByClassName('tag-cloud-tags');
+     var tags = alltags[0].getElementsByTagName('a');
+     for (var i = tags.length - 1; i >= 0; i--) {
+       var r=Math.floor(Math.random()*75+130);
+       var g=Math.floor(Math.random()*75+100);
+       var b=Math.floor(Math.random()*75+80);
+       tags[i].style.background = "rgb("+r+","+g+","+b+")";
+     }
+</script>
+
+<style>
+  .tag-cloud-tags{
+    /*font-family: Helvetica, Tahoma, Arial;*/
+    /*font-weight: 100;*/
+    text-align: center;
+    counter-reset: tags;
+  }
+  .tag-cloud-tags a{
+    border-radius: 6px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 8px 5px 0px 0px;
+  }
+  .tag-cloud-tags a:before{
+    content: "🔖";
+  }
+</style>
         
       </div>
       
@@ -243,7 +271,6 @@
 
           </div>
           
-    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -372,27 +399,18 @@
     <span title="站点阅读时长">1:19</span>
 </div>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>​
+    <span class="post-meta-item-icon">
+          <i class="fab fa-google"></i>
+    </span>
+    <span>总访客&nbsp<span id="busuanzi_value_site_uv"></span>&nbsp人</span>
+        <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+          <i class="fab fa-weibo"></i>
+    </span>
+        <span>访问总量&nbsp<span id="busuanzi_value_site_pv"></span>&nbsp次</span>
+
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
-</div>
 
 
 
@@ -463,7 +481,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       appId      : 'hlEdFPDoidl34tWoqTI1GH3U-gzGzoHsz',
       appKey     : 'owVYk4UJ95M47SgKWSSG3ES0',
       placeholder: "欢迎留言！",
-      avatar     : 'mm',
+      avatar     : 'robohash',
       meta       : guest,
       pageSize   : '10' || 10,
       visitor    : true,
