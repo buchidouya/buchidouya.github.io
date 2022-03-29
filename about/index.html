@@ -17,20 +17,22 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="博客小站创建于2022年3月！   谢谢浏览！">
+  <meta name="description" content="欢迎浏览！ 一个记录学习日常的小站 博客小站创建于2022年3月 集成了留言板功能，欢迎留言 左侧可以搜索站内内容 持续更新中……">
 <meta property="og:type" content="website">
 <meta property="og:title" content="关于">
 <meta property="og:url" content="http://example.com/about/index.html">
 <meta property="og:site_name" content="博客小站">
-<meta property="og:description" content="博客小站创建于2022年3月！   谢谢浏览！">
+<meta property="og:description" content="欢迎浏览！ 一个记录学习日常的小站 博客小站创建于2022年3月 集成了留言板功能，欢迎留言 左侧可以搜索站内内容 持续更新中……">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://typora1321.oss-cn-beijing.aliyuncs.com/1648481326(1).jpg">
 <meta property="article:published_time" content="2022-03-27T16:55:08.000Z">
-<meta property="article:modified_time" content="2022-03-28T05:45:00.552Z">
+<meta property="article:modified_time" content="2022-03-29T02:51:38.052Z">
 <meta property="article:author" content="Shell">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://typora1321.oss-cn-beijing.aliyuncs.com/1648481326(1).jpg">
 
 <link rel="canonical" href="http://example.com/about/">
 
@@ -140,6 +142,11 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">3</span></a>
 
   </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-book fa-fw"></i>留言板</a>
+
+  </li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -215,9 +222,13 @@
       
       
       <div class="post-body">
-          <center>博客小站创建于2022年3月！
-
-<center> 谢谢浏览！
+          <p><strong><center>欢迎浏览！</strong></p>
+<p><strong>一个记录学习日常的小站</strong></p>
+<p><strong>博客小站创建于2022年3月</strong></p>
+<p><strong>集成了留言板功能，欢迎留言</strong></p>
+<p><strong>左侧可以搜索站内内容</strong></p>
+<p><strong>持续更新中……</strong></p>
+<img src="https://typora1321.oss-cn-beijing.aliyuncs.com/1648481326(1).jpg" alt="1" style="zoom:33%;" />
 
       </div>
       
@@ -233,6 +244,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -360,6 +372,7 @@
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     <span title="站点阅读时长">1:19</span>
 </div>
+
         
 <div class="busuanzi-count">
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -434,6 +447,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'hlEdFPDoidl34tWoqTI1GH3U-gzGzoHsz',
+      appKey     : 'owVYk4UJ95M47SgKWSSG3ES0',
+      placeholder: "欢迎留言！",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
