@@ -198,6 +198,130 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/github.jpg">
+      <meta itemprop="name" content="Shell">
+      <meta itemprop="description" content="不吃豆芽!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="博客小站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" class="post-title-link" itemprop="url">蓝桥杯常用技巧</a>
+        </h2>
+
+        <div class="post-meta">
+
+
+    <i class="fab fa-github" style="font-size:17px;color:HotPink;"></i>
+    <font color=HotPink>置顶文章</font>
+    <span class="post-meta-divider">|</span>
+
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-01 20:16:21" itemprop="dateCreated datePublished" datetime="2022-04-01T20:16:21+08:00">2022-04-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-06 22:38:59" itemprop="dateModified" datetime="2022-04-06T22:38:59+08:00">2022-04-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/" itemprop="url" rel="index"><span itemprop="name">蓝桥杯</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" class="post-meta-item leancloud_visitors" data-flag-title="蓝桥杯常用技巧" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>8.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>8 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="万能头文件"><a href="#万能头文件" class="headerlink" title="万能头文件"></a>万能头文件</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span>＜bits/stdc++.h＞</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="加快输入输出"><a href="#加快输入输出" class="headerlink" title="加快输入输出"></a>加快输入输出</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">main函数中加入以下代码，降低时长</span><br><span class="line">ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">cout.<span class="built_in">tie</span>(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/27/%E5%89%91%E6%8C%87offer%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -235,7 +359,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-05 00:38:12" itemprop="dateModified" datetime="2022-04-05T00:38:12+08:00">2022-04-05</time>
+                <time title="修改时间：2022-04-06 22:39:06" itemprop="dateModified" datetime="2022-04-06T22:39:06+08:00">2022-04-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -360,7 +484,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-05 00:38:16" itemprop="dateModified" datetime="2022-04-05T00:38:16+08:00">2022-04-05</time>
+                <time title="修改时间：2022-04-06 22:39:11" itemprop="dateModified" datetime="2022-04-06T22:39:11+08:00">2022-04-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -425,130 +549,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/27/LeedCode%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/github.jpg">
-      <meta itemprop="name" content="Shell">
-      <meta itemprop="description" content="不吃豆芽!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="博客小站">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" class="post-title-link" itemprop="url">蓝桥杯常用技巧</a>
-        </h2>
-
-        <div class="post-meta">
-
-
-    <i class="fab fa-github" style="font-size:17px;color:HotPink;"></i>
-    <font color=HotPink>置顶文章</font>
-    <span class="post-meta-divider">|</span>
-
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-04-01 20:16:21" itemprop="dateCreated datePublished" datetime="2022-04-01T20:16:21+08:00">2022-04-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-05 00:38:25" itemprop="dateModified" datetime="2022-04-05T00:38:25+08:00">2022-04-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/" itemprop="url" rel="index"><span itemprop="name">蓝桥杯</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" class="post-meta-item leancloud_visitors" data-flag-title="蓝桥杯常用技巧" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.1k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="万能头文件"><a href="#万能头文件" class="headerlink" title="万能头文件"></a>万能头文件</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span>＜bits/stdc++.h＞</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="加快输入输出"><a href="#加快输入输出" class="headerlink" title="加快输入输出"></a>加快输入输出</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">main函数中加入以下代码，降低时长</span><br><span class="line">ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">cout.<span class="built_in">tie</span>(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/04/01/%E8%93%9D%E6%A1%A5%E6%9D%AF%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1527,13 +1527,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">133k</span>
+    <span title="站点总字数">137k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2:01</span>
+    <span title="站点阅读时长">2:05</span>
 </div>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>​
